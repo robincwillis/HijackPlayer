@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Hijack Player</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/iscroll.js"></script>
+
+	<script type="text/javascript">
+		var myScroll;
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	</script>
+
+</head>
+<body>
+
+	<div class="navigation">
+		<div class="nav-btn right-btn">
+			<div data-icon="k" class="icon nav-icon collapse-icon hidden"></div>
+			<div data-icon="m" class="icon nav-icon expand-icon"></div>
+
+	</div>
+		<h2 class="player-title">Hijack Player</h2>
+		<div class="nav-btn left-btn">
+			<div data-icon="C" class="icon nav-icon playlist-icon"></div>
+
+		</div>
+	</div>
+
+	<div id="playlist-view" class="view">
+		<ul class="playlist">
+		</ul>
+	</div>
+
+	<div id="player-view" class="view pos-right">
+
+		<div id="ap" class="player-container">
+			<div class="audio-info">
+				<div class="centered-table">
+					<div class="content-table">
+						<h2 class="song-title" ></h2>
+						<h3 class="song-duration"></h3>
+						<h4 class="artist-album-info" ></h4>
+					</div>
+				</div>
+			</div>
+
+			<div id="progressBar" class="progress-bar scrollable">
+				<div class="waveform"></div>
+				<span id="progress" class="scrollable"></span>
+				<span id="seek" class="scrollable"></span>
+				<div class="progress-preview scrollable"></div>
+			</div>
+
+			<div class="controls">
+				<div class="control-btn prev"><div data-icon="#" class="icon prev-icon"></div></div>
+				<div class="control-btn play-pause">
+					<div data-icon="3" class="icon play-icon"></div>
+					<div data-icon="2" class="icon pause-icon hidden"></div>
+				</div>
+
+				<div class="control-btn next"><div data-icon="%" class="icon next-icon"></div></div>
+				<div class="control-btn download"><div data-icon="e" class="icon download-icon"></div></div>
+			</div>
+
+		</div>
+
+	 	<div class="album-cover">
+	 	</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+	<script type="text/javascript" src="jquery.mobile.vmouse.js"></script>
+	<script type="text/javascript" src="vendor/js/underscore-min.js"></script>
+	<script type="text/javascript" src="templates.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>

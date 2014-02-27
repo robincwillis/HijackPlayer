@@ -1,0 +1,142 @@
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "robocons";
+  src:url("fonts/robocons.eot");
+  src:url("fonts/robocons.eot?#iefix") format("embedded-opentype"),
+    url("fonts/robocons.ttf") format("truetype"),
+    url("fonts/robocons.svg#robocons") format("svg"),
+    url("fonts/robocons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "robocons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "robocons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-arrow-left:before {
+  content: "a";
+}
+
+.icon-arrow-right:before {
+  content: "b";
+}
+
+.icon-check:before {
+  content: "c";
+}
+
+.icon-close:before {
+  content: "d";
+}
+
+.icon-cloud:before {
+  content: "e";
+}
+
+.icon-download:before {
+  content: "f";
+}
+
+.icon-file:before {
+  content: "g";
+}
+
+.icon-folder:before {
+  content: "h";
+}
+
+.icon-ghost:before {
+  content: "i";
+}
+
+.icon-mail:before {
+  content: "j";
+}
+
+.icon-minus:before {
+  content: "k";
+}
+
+.icon-pencil:before {
+  content: "l";
+}
+
+.icon-plus:before {
+  content: "m";
+}
+
+.icon-trash:before {
+  content: "n";
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-family:inherit;font-size:100%;vertical-align:baseline}
+body{line-height:1;color:#000;background:#fff}
+
+ol,ul{list-style:none; margin:0; padding:0;}
+
+table{border-collapse:separate;border-spacing:0;vertical-align:middle}
+
+caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}
+
+a img{border:none}
+
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+
+body{font-family:sans-serif}
+.container{margin:15px auto;width:80%}
+h1{margin:40px 0 20px;font-weight:700;font-size:38px;line-height:32px;}
+
+.small{font-size:14px;color:#a5adb4;}
+.small a{color:#a5adb4;}
+.small a:hover{color:#fb565e}
+.glyphs.character-mapping{
+  margin:0 0 20px 0;
+
+  color:rgba(0,0,0,0.5);}
+.glyphs.character-mapping li{
+  margin:0 30px 20px 0;
+  display:inline-block;
+  width:35px;
+  text-align:center;
+}
+
+li p{
+ /* display: none;*/
+}
+
+.glyphs.character-mapping .icon{
+
+
+  position:relative;
+  width:35px;
+  height:35px;
+  color:#000 !important;
+  font-size:32px;}
+.glyphs.character-mapping .icon svg{fill:#000}

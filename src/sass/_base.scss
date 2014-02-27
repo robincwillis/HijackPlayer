@@ -1,0 +1,438 @@
+//Global
+
+html, body{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	font-family:sans-serif;
+}
+
+
+
+*{
+	box-sizing:border-box;
+}
+
+.hidden{
+	display:none;
+}
+
+.centered-table {
+   display: table;
+   width: 100%;
+   height: 100%;
+}
+
+.content-table {
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+}
+
+//Navigation
+
+.navigation{
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:75px;
+	background-color:rgba(0,0,0,0.5);
+	z-index: 300;
+	border-bottom: 1px solid #fff;
+	color:#fff;
+	text-align:center;
+}
+
+.navigation h2.player-title{
+	font-size:30px;
+	line-height:75px;
+}
+
+.navigation .nav-btn{
+	width:75px;
+	height:75px;
+	position: fixed;
+	top:0;
+}
+
+.navigation .nav-icon:focus,
+.navigation .nav-icon:hover{
+	background-color:rgba(0,0,0,0.5);
+}
+
+.navigation .right-btn{
+	right:0;
+}
+
+.navigation .left-btn{
+	left:0;
+}
+
+.nav-icon{
+	cursor:pointer;
+	margin:10px;
+	height:55px;
+	width:55px;
+	padding-top: 3px;
+	border-radius:50%;
+	color:#fff;
+	border: 3px solid #fff;
+	font-size:35px;
+	line-height:55px;
+	text-align:center;
+}
+
+// ---------------
+//Views
+// ---------------
+
+.view{
+	padding-top: 75px;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	vertical-align: top;
+	overflow-y: scroll;
+    overflow-x: hidden;
+
+	-webkit-transition:-webkit-transform 0.3s ease-in-out;
+}
+
+#playlist-view{
+	/*left:0;*/
+	background-color: #000;
+	z-index: 50;
+
+}
+
+#player-view{
+
+	background-color: black;
+}
+
+.pos-focus{
+	-webkit-transform:translate3d(0, 0, 0);
+}
+
+.pos-left{
+	-webkit-transform:translate3d(-100%, 0, 0);
+}
+
+.pos-right{
+	-webkit-transform:translate3d(100%, 0, 0);
+}
+
+// ---------------
+//Player
+// ---------------
+
+.player-container{
+	position: relative;
+	width:100%;
+	height:100%;
+	z-index:200;
+}
+.controls{
+	width:100%;
+	height:20%;
+
+ //  -moz-background-clip: border;     /* Firefox 3.6 */
+ //  -webkit-background-clip: border;  /* Safari 4? Chrome 6? */
+ //  background-clip: border-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+
+ //  -moz-background-clip: padding;     /* Firefox 3.6 */
+ //  -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+ //  background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+
+ //  -moz-background-clip: content;     /* Firefox 3.6 */
+ //  -webkit-background-clip: content;  /* Safari 4? Chrome 6? */
+ //  background-clip: content-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+
+ // border-bottom: 20px solid rgba(0, 0, 0, 0.75);
+
+}
+
+.audio-info{
+	width:100%;
+	height:60%;
+	background: rgba(0,0,0, 0.05);
+	text-align: center;
+	padding:50px;
+	color: #fff;
+	text-shadow: 0 0 40px rgba(0,0,0,.5);
+}
+
+.audio-info h2{
+	font-size:72px;
+	margin-bottom:20px;
+}
+
+.audio-info h3{
+	font-size:32px;
+	margin-bottom:20px;
+}
+
+.audio-info h4{
+	font-size:18px;
+	margin-bottom:20px;
+}
+
+.progress-bar{
+	height:20%;
+	background-color: rgba(255,255,255,0.9);
+	position: relative;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.waveform{
+	opacity:0.5;
+	position:absolute;
+	height:100%;
+	width:100%;
+	left:0;
+	top:0;
+	z-index:300;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size: 100% 80%;
+}
+
+.controls{
+	overflow:hidden;
+	font-size:100px;
+	color:#fff;
+	text-align:center;
+}
+
+#progress {
+	position: absolute;
+	top:0;
+	left:0;
+	background-color:rgba(255,0,255,1);
+	height:100%;
+	display:block;
+}
+
+#seek {
+	position: absolute;
+	top:0;
+	left:0;
+	background-color:rgba(0,255,255,1);
+	height:100%;
+	width:0;
+	display:block;
+}
+
+.progress-preview{
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+	background-color:rgba(0,0,0,0.2);
+	display:block;
+
+}
+
+.prev, .next{
+	width:25%;
+	height:100%;
+	border-right:1px solid #fff;
+
+}
+
+.play-pause{
+	border-right:1px solid #fff;
+}
+
+.play-pause, .download{
+	width:25%;
+	height:100%;
+}
+
+input{
+	margin:40px;
+}
+
+.controls a{
+	color: #fff;
+}
+
+.controls .control-btn{
+	cursor:pointer;
+	position:relative;
+	float:left;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.controls .control-btn:focus,
+.controls .control-btn:hover{
+	background-color: rgba(0,0,0,0.75);
+
+}
+
+.prev-icon, .next-icon, .play-icon, .pause-icon, .download-icon{
+	margin-top: -50px;
+	top: 50%;
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+}
+
+
+.album-cover{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.album-cover img{
+	width:100%;
+}
+
+// ---------------
+// PLAYLIST
+// ---------------
+
+ul.playlist{
+	list-syle:none;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+ul.playlist li{
+	cursor:pointer;
+	width:100%;
+	height:100px;
+	border-bottom: 1px solid #ccc;
+	background-color:#fff;
+	display:block;
+	padding:10px;
+	margin:0;
+	position:relative;
+	padding: 0 100px;
+}
+
+ul.playlist li .thumbnail{
+	background-color:#000;
+	width:80px;
+	height:80px;
+	position:absolute;
+	top:10px;
+	left:10px;
+	background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+ul.playlist li .song-meta{
+	height:80px;
+	margin:10px 0;
+	float:left;
+	width:100%;
+	overflow:hidden;
+	white-space: nowrap;
+}
+
+ul.playlist li .song-meta h2.song-title{
+	font-size:32px;
+	margin:0 0 10px 0;
+	padding:0;
+	height:40px;
+	line-height:40px;
+}
+
+ul.playlist li .song-meta h4.song-info{
+	margin:0;
+	padding:0;
+	font-size:18px;
+}
+
+ul.playlist li .song-meta h4.song-info span.song-artist{
+	color:#ccc;
+}
+
+
+ul.playlist li .action{
+	width:80px;
+	height:80px;
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+
+.action-icon, .playing-icon{
+	font-size:40px;
+	line-height:90px;
+	text-align:center;
+}
+
+
+// RESPONSIVE
+
+@media (max-width: 640px){
+
+	.controls {
+		font-size: 50px;
+	}
+
+	.audio-info{
+		padding:20px;
+	}
+
+	.prev-icon, .next-icon, .play-icon, .pause-icon, .download-icon{
+		margin-top: -25px;
+		top: 50%;
+		position: absolute;
+		left: 50%;
+		margin-left: -25px;
+	}
+
+	.audio-info h2{
+		font-size:48px;
+		margin-bottom:10px;
+	}
+
+	.audio-info h3{
+		font-size:18px;
+		margin-bottom:10px;
+	}
+
+	.audio-info h4{
+		font-size:14px;
+		margin-bottom:10px;
+	}
+
+	ul.playlist li .song-meta h2.song-title{
+		font-size:18px;
+		margin:0 0 10px 0;
+		padding:0;
+		height:40px;
+		line-height:40px;
+	}
+
+	ul.playlist li .song-meta h4.song-info{
+		margin:0;
+		padding:0;
+		font-size:12px;
+	}
+
+	// Weird missing one pixel on iphone portrait
+	.progress-bar{
+		height:21%;
+	}
+
+}
+

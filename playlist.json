@@ -1,0 +1,122 @@
+[
+	{
+		"title":"jan-2014-mix-nothing-until-everything",
+		"artist":"robochan",
+		"album": "greatest hits",
+		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/jan-2014-mix-nothing-until-everything.mp3",
+		"cover":"https://s3.amazonaws.com/designingcrime/radio/img/a.jpg",
+		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/jan-2014-mix-nothing-until-everything.png"
+	},
+	{
+		"title":"WAMP-July",
+		"artist":"robochan",
+		"album": "Serato Recordings",
+		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/WAMP-July.mp3",
+		"cover":"https://s3.amazonaws.com/designingcrime/radio/img/b.jpg",
+		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/WAMP-July.png"
+	},
+	{
+		"title":"4am take 3",
+		"artist":"robochan",
+		"album": "Serato Recordings",
+		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/4am-take3.mp3",
+		"cover":"https://s3.amazonaws.com/designingcrime/radio/img/c.jpg",
+		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/4am-take3.png"
+	},
+	{
+		"title":"4am take 2",
+		"artist":"robochan",
+		"album": "Serato Recordings",
+		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/4am-take2.mp3",
+		"cover":"https://s3.amazonaws.com/designingcrime/radio/img/d.jpg",
+		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/4am-take2.png"
+	},
+	{
+		"title":"4am take 1",
+		"artist":"robochan",
+		"album": "Serato Recordings",
+		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/4am-take1.mp3",
+		"cover":"https://s3.amazonaws.com/designingcrime/radio/img/e.jpg",
+		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/4am-take1.png"
+	},
+	{
+		"title":"11 04 intermission",
+		"artist":"robochan",
+		"album": "Serato Recordings",
+		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/11-04-intermission.mp3",
+		"cover":"https://s3.amazonaws.com/designingcrime/radio/img/f.jpg",
+		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/11-04-intermission.png"
+	},
+	{
+		"title":"01 2 damage",
+		"artist":"robochan",
+		"album": "Serato Recordings",
+		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/14--01-22-damage.mp3",
+		"cover":"https://s3.amazonaws.com/designingcrime/radio/img/g.jpg",
+		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/14--01-22-damage.png"
+	},
+	{
+		"title":"01 2 something",
+		"artist":"robochan",
+		"album": "Serato Recordings",
+		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/14-01-2something.mp3",
+		"cover":"https://s3.amazonaws.com/designingcrime/radio/img/h.jpg",
+		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/14-01-2something.png"
+	},
+	{
+		"title":"01 2 i know",
+		"artist":"robochan",
+		"album": "Serato Recordings",
+		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/14-01-22-iknow.mp3",
+		"cover":"https://s3.amazonaws.com/designingcrime/radio/img/i.jpg",
+		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/14-01-22-iknow.png"
+	},
+	{
+		"title":"jan 24",
+		"artist":"robochan",
+		"album": "Serato Recordings",
+		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/14-01-on-24.mp3",
+		"cover":"https://s3.amazonaws.com/designingcrime/radio/img/j.jpg",
+		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/14-01-on-24.png"
+	},
+	{
+		"title":"feb 1 take 1",
+		"artist":"robochan",
+		"album": "Serato Recordings",
+		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/feb-1-take1.mp3",
+		"cover":"https://s3.amazonaws.com/designingcrime/radio/img/k.jpg",
+		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/feb-1-take1.png"
+	},
+	{
+		"title":"feb 1 take 2",
+		"artist":"robochan",
+		"album": "Serato Recordings",
+		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/feb1-take 2-inthemix.mp3",
+		"cover":"https://s3.amazonaws.com/designingcrime/radio/img/l.jpg",
+		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/feb1-take 2-inthemix.png"
+	},
+	{
+		"title":"april-part1",
+		"artist":"robochan",
+		"album": "Serato Recordings",
+		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/april-part1.mp3",
+		"cover":"https://s3.amazonaws.com/designingcrime/radio/img/m.jpg",
+		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/april-part1.png"
+	},
+	{
+		"title":"april-part2",
+		"artist":"robochan",
+		"album": "Serato Recordings",
+		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/april-part2.mp3",
+		"cover":"https://s3.amazonaws.com/designingcrime/radio/img/n.jpg",
+		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/april-part2.png"
+	},
+	{
+		"title":"Serato-Recording-2-22-13",
+		"artist":"robochan",
+		"album": "Serato Recordings",
+		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/Serato-Recording-2-22-13.mp3",
+		"cover":"https://s3.amazonaws.com/designingcrime/radio/img/n.jpg",
+		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/Serato-Recording-2-22-13.png"
+	}
+]
