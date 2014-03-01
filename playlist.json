@@ -8,7 +8,7 @@
 		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/jan-2014-mix-nothing-until-everything.png"
 	},
 	{
-		"title":"WAMP-July",
+		"title":"[2013 July] WAMP",
 		"artist":"robochan",
 		"album": "Serato Recordings",
 		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/WAMP-July.mp3",
@@ -16,7 +16,7 @@
 		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/WAMP-July.png"
 	},
 	{
-		"title":"Feb 4am take 3",
+		"title":"[2014 Feb] 4am take 3",
 		"artist":"robochan",
 		"album": "Serato Recordings",
 		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/4am-take3.mp3",
@@ -24,7 +24,7 @@
 		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/4am-take3.png"
 	},
 	{
-		"title":"Feb 4am take 2",
+		"title":"[2014 Feb] 4am take 2",
 		"artist":"robochan",
 		"album": "Serato Recordings",
 		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/4am-take2.mp3",
@@ -32,7 +32,7 @@
 		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/4am-take2.png"
 	},
 	{
-		"title":"Feb 4am take 1",
+		"title":"[2014 Feb] 4am take 1",
 		"artist":"robochan",
 		"album": "Serato Recordings",
 		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/4am-take1.mp3",
