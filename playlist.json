@@ -64,7 +64,7 @@
 		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/14-01-2something.png"
 	},
 	{
-		"title":"01 2 i know",
+		"title":"[01 2 2014] i know",
 		"artist":"robochan",
 		"album": "Serato Recordings",
 		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/14-01-22-iknow.mp3",
@@ -72,7 +72,7 @@
 		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/14-01-22-iknow.png"
 	},
 	{
-		"title":"jan 24",
+		"title":"[jan 24 2014]",
 		"artist":"robochan",
 		"album": "Serato Recordings",
 		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/14-01-on-24.mp3",
@@ -80,7 +80,7 @@
 		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/14-01-on-24.png"
 	},
 	{
-		"title":"feb 1 take 1",
+		"title":"[feb 1 2014] take 1",
 		"artist":"robochan",
 		"album": "Serato Recordings",
 		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/feb-1-take1.mp3",
@@ -88,7 +88,7 @@
 		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/feb-1-take1.png"
 	},
 	{
-		"title":"feb 1 take 2",
+		"title":"[feb 1 2014] take 2",
 		"artist":"robochan",
 		"album": "Serato Recordings",
 		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/feb1-take 2-inthemix.mp3",
@@ -112,7 +112,7 @@
 		"waveform":"https://s3.amazonaws.com/designingcrime/radio/waveform/april-part2.png"
 	},
 	{
-		"title":"Serato-Recording-2-22-13",
+		"title":"[2-22-13]Serato-Recording",
 		"artist":"robochan",
 		"album": "Serato Recordings",
 		"src":"https://s3.amazonaws.com/designingcrime/radio/tracks/Serato-Recording-2-22-13.mp3",
