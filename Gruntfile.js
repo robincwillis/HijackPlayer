@@ -22,18 +22,17 @@ module.exports = function(grunt) {
 					}
 				},
 				files: {
-					'src/js/application.min.js': [
+					'js/application.min.js': [
 					'src/js/*js',
 					]
 				}
 			},
 			vendor: {
 				files: {
-					'js/vendor.js' : [
-					'vendor/js/jquery-1.9.1.min.js',
+					'js/vendor.min.js' : [
+					'vendor/js/jquery-1.10.2.min.js',
 					'vendor/js/jquery.mobile.vmouse.js',
-					'vendor/js/underscore.min.js',
-					'vendor/js/templates.js'
+					'vendor/js/underscore-min.js',
 					]
 				}
 			}

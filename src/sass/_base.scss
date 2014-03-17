@@ -9,8 +9,6 @@ html, body{
 	font-family:sans-serif;
 }
 
-
-
 *{
 	box-sizing:border-box;
 }
@@ -99,19 +97,16 @@ html, body{
 	vertical-align: top;
 	overflow-y: scroll;
     overflow-x: hidden;
-
 	-webkit-transition:-webkit-transform 0.3s ease-in-out;
 }
 
 #playlist-view{
-	/*left:0;*/
 	background-color: #000;
 	z-index: 50;
-
+	padding-top:0;
 }
 
 #player-view{
-
 	background-color: black;
 }
 
@@ -140,21 +135,6 @@ html, body{
 .controls{
 	width:100%;
 	height:20%;
-
- //  -moz-background-clip: border;     /* Firefox 3.6 */
- //  -webkit-background-clip: border;  /* Safari 4? Chrome 6? */
- //  background-clip: border-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
-
- //  -moz-background-clip: padding;     /* Firefox 3.6 */
- //  -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
- //  background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
-
- //  -moz-background-clip: content;     /* Firefox 3.6 */
- //  -webkit-background-clip: content;  /* Safari 4? Chrome 6? */
- //  background-clip: content-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
-
- // border-bottom: 20px solid rgba(0, 0, 0, 0.75);
-
 }
 
 .audio-info{
@@ -236,14 +216,12 @@ html, body{
 	left:0;
 	background-color:rgba(0,0,0,0.2);
 	display:block;
-
 }
 
 .prev, .next{
 	width:25%;
 	height:100%;
 	border-right:1px solid #fff;
-
 }
 
 .play-pause{
@@ -273,7 +251,6 @@ input{
 .controls .control-btn:focus,
 .controls .control-btn:hover{
 	background-color: rgba(0,0,0,0.75);
-
 }
 
 .prev-icon, .next-icon, .play-icon, .pause-icon, .download-icon{
@@ -301,6 +278,8 @@ input{
 // PLAYLIST
 // ---------------
 
+
+
 ul.playlist{
 	list-syle:none;
 	width:100%;
@@ -321,6 +300,13 @@ ul.playlist li{
 	padding: 0 100px;
 }
 
+ul li.playlist-buffer{
+	width:100%;
+	height:75px;
+	background-color:transparent;
+	border:none;
+}
+
 ul.playlist li .thumbnail{
 	background-color:#000;
 	width:80px;
@@ -334,7 +320,6 @@ ul.playlist li .thumbnail{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
 
 ul.playlist li .song-meta{
@@ -364,7 +349,6 @@ ul.playlist li .song-meta h4.song-info span.song-artist{
 	color:#ccc;
 }
 
-
 ul.playlist li .action{
 	width:80px;
 	height:80px;
@@ -379,9 +363,7 @@ ul.playlist li .action{
 	text-align:center;
 }
 
-
 // RESPONSIVE
-
 @media (max-width: 640px){
 
 	.controls {
