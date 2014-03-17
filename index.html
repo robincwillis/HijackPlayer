@@ -8,9 +8,10 @@
 	<meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script type="text/javascript" src="vendor/js/iscroll.js"></script>
 
 	<script type="text/javascript">
+		//Setup iScroll before anything.
 		var myScroll;
 		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 	</script>
@@ -18,18 +19,14 @@
 
 </head>
 <body>
-
-
 	<div class="navigation">
 		<div class="nav-btn right-btn">
 			<div data-icon="k" class="icon nav-icon collapse-icon hidden"></div>
 			<div data-icon="m" class="icon nav-icon expand-icon"></div>
-
 	</div>
 		<h2 class="player-title">Hijack Player</h2>
 		<div class="nav-btn left-btn">
 			<div data-icon="C" class="icon nav-icon playlist-icon"></div>
-
 		</div>
 	</div>
 
@@ -74,12 +71,9 @@
 	 	<div class="album-cover">
 	 	</div>
 	</div>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-	<script type="text/javascript" src="jquery.mobile.vmouse.js"></script>
-	<script type="text/javascript" src="vendor/js/underscore-min.js"></script>
-	<script type="text/javascript" src="templates.js"></script>
-	<script type="text/javascript" src="main.js"></script>
+
+	<script src="js/vendor.js"></script>
+	<script src="js/application.js"></script>
 
 </body>
 </html>

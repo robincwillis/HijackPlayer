@@ -7,6 +7,35 @@ module.exports = function(grunt) {
 			compass : {
 				files: ['src/sass/*'],
 				tasks: ['compass:dist']
+			},
+			uglify : {
+				files: ['src/js/*.js'],
+				tasks: ['uglify:dist']
+			}
+		},
+
+		uglify: {
+			dist: {
+				options : {
+					sourceMap: function (path) {
+						return 'application.min.js.map';
+					}
+				},
+				files: {
+					'src/js/application.min.js': [
+					'src/js/*js',
+					]
+				}
+			},
+			vendor: {
+				files: {
+					'js/vendor.js' : [
+					'vendor/js/jquery-1.9.1.min.js',
+					'vendor/js/jquery.mobile.vmouse.js',
+					'vendor/js/underscore.min.js',
+					'vendor/js/templates.js'
+					]
+				}
 			}
 		},
 
@@ -22,11 +51,10 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-compass');
-	//grunt.loadNpmTasks('grunt-contrib-handlebars');
-	//grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 
 	grunt.registerTask('dev', ['build','watch']);
-	grunt.registerTask('build', ['compass']);
+	grunt.registerTask('build', ['uglify:vendor','uglify:dist','compass']);
 	grunt.registerTask('default',['dev']);
 
 };
