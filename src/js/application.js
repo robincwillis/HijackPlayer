@@ -146,13 +146,13 @@ app = {
 
 	bindEvents : function(){
 		//Playlist Item Clicked
-		// $('body').on('vclick', '.playlist-track', function(e){
-		// 	e.preventDefault();
-		// 	app.views.openPlayer();
-		// 	if(app.models.curTrack === $(this).attr('id')){return;}
-		// 	app.views.updateNavigation();
-		// 	app.controllers.loadTrack($(this).attr('id'));
-		// });
+		$('body').on('click', '.playlist-track', function(e){
+			e.preventDefault();
+			app.views.openPlayer();
+			if(app.models.curTrack === $(this).attr('id')){return;}
+			app.views.updateNavigation();
+			app.controllers.loadTrack($(this).attr('id'));
+		});
 		//Nav Playlist View Button Clicked
 		$('.left-btn').on('vclick', function(e){
 			e.preventDefault();
