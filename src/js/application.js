@@ -87,8 +87,21 @@ app = {
 		},
 		//Update the player with the information for the currently playing track
 		updateAudioInfo : function(id){
+			//Title
 			$('.audio-info .song-title').empty().append(app.models.tracks[id].title);
+			//Artist / Album
 			$('.audio-info .artist-album-info').empty().append(app.models.tracks[id].artist + " | " + app.models.tracks[id].album);
+			//Date
+			$('.audio-info .song-date').empty().append(app.models.tracks[id].date);
+			//Tracks
+			$('.audio-info .song-tracks').empty();
+			if(app.models.tracks[id].tracks !== undefined){
+				$.each(app.models.tracks[id].tracks, function(index, track){
+					$('.audio-info .song-tracks').append('<li>'+track+'</li>');
+				});
+			}
+
+			//Cover
 			$('.album-cover').empty().append('<img src="'+app.models.tracks[id].cover+'">');
 
 			if(app.models.tracks[id].waveform !== undefined){
@@ -221,16 +234,21 @@ app = {
 			});
 		}
 	},
-	bootstrap : function(json){
-		app.models.tracks = json;
+	bootstrap : function(playlist, settings){
+		app.models.tracks = playlist;
+		$('.player-title').text(settings.title);
 		$('.playlist').empty();
 		//(small hack) Adding padding to this element screws up the way iscroll calculates scrolling so we push content down with an element in the list
 		$('.playlist').append('<li class="playlist-buffer"></li>');
 		//Load tracks into the DOM
 		$.each(app.models.tracks, function(i, track){
+			if(track.published){
+
 			track.id = i;
 			var trackTmpl = _.template(Templates["track"], track);
 			$('.playlist').append(trackTmpl);
+			}
+
 		});
 		//Attach iScroll to the Playlist
 		if(mobile()){
@@ -242,7 +260,13 @@ app = {
 	},
 	//Get playlist json file
 	init : function(){
-		$.getJSON('playlist.json',this.bootstrap);
+		var getPlaylist = $.getJSON('playlist.json');
+		var getSettings = $.getJSON('settings.json');
+
+		$.when(getPlaylist, getSettings).done(function(playlist, settings){
+			app.bootstrap(playlist[0], settings[0]);
+		});
+
 		document.audio = this.models.audio;
 	}
 }
